@@ -1,6 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.kotlin_version = "1.4.20"
+    ext {
+        kotlin_version = "1.4.20"
+        activityVersion = "1.2.0-alpha04"
+
+        admob_app_id = admob_app_id
+        ad_front = ad_front
+        ad_banner = ad_banner
+        ad_reward = ad_reward
+    }
+
     repositories {
         google()
         jcenter()
