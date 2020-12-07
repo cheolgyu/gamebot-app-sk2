@@ -232,22 +232,6 @@ json형태로 아이디,이름,개별 객체의 퍼센트,속한 화면
             },
             {
               "id": 12,
-              "name": "스마트키.off",
-              "min": 90,
-              "screens": [
-                "MODE_BASIC"
-              ]
-            },
-            {
-              "id": 13,
-              "name": "스마트키.on",
-              "min": 90,
-              "screens": [
-                "MODE_BASIC"
-              ]
-            },
-            {
-              "id": 14,
               "name": "스킵",
               "min": 90,
               "screens": [
@@ -255,8 +239,40 @@ json형태로 아이디,이름,개별 객체의 퍼센트,속한 화면
               ]
             },
             {
+              "id": 13,
+              "name": "스킵팝업.확인",
+              "min": 90,
+              "screens": [
+                "MODE_BASIC"
+              ]
+            },
+            {
+              "id": 14,
+              "name": "스킵팝업.취소",
+              "min": 90,
+              "screens": [
+                "MODE_BASIC"
+              ]
+            },
+            {
               "id": 15,
-              "name": "스킵.확인",
+              "name": "스킵팝업.스킵배경",
+              "min": 90,
+              "screens": [
+                "MODE_BASIC"
+              ]
+            },
+            {
+              "id": 16,
+              "name": "스마트키.off",
+              "min": 90,
+              "screens": [
+                "MODE_BASIC"
+              ]
+            },
+            {
+              "id": 17,
+              "name": "스마트키.on",
               "min": 90,
               "screens": [
                 "MODE_BASIC"
