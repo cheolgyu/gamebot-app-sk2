@@ -106,40 +106,168 @@ json형태로 아이디,이름,개별 객체의 퍼센트,속한 화면
 
 
 
-
-
+### yolo_분류_이미지폴더
 ```
-인식 대상
+폴더명                     분류내용
+11                      스킵_확인
+10                      스킵
+9                       스마트키on
+8                       스마트키off
+7_1                     분해결과_3가지+금화
+7                       분해결과_2가지+금화
+6                       분해팝업
+5_1                     분해우+ 선택된장비의 분해결과(2가지_금화) + 홈
+5                       분해우+ 선택된장비의 분해결과(3가지_금화) + 홈
+4                       일반고급 + 홈
+3                       분해좌 + 홈
+2                       전체가방풀
+1                       절전각방풀
+```
+### yolo_라벨
+```
+{
+          "regex":[
+              "11=,10,11,",
+              "9=,8,9,",
+              "6=,6,7,"
+           ],
+          "labels": [
+            {
+              "id": 0,
+              "name": "홈",
+              "min": 2,
+              "screens": [
+                "BAG_BASIC",
+                "BAG_DISSASSEMBLE_ACTIVE",
+                "BAG_DISSASSEMBLE_SELECT"
+              ]
+            },
+            {
+              "id": 1,
+              "name": "절전풀",
+              "min": 90,
+              "screens": [
+                "MODE_POWER_SAVE"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "기본풀",
+              "min": 90,
+              "screens": [
+                "MODE_BASIC"
+              ]
+            },
+            {
+              "id": 3,
+              "name": "분해.시작",
+              "min": 90,
+              "screens": [
+                "BAG_BASIC"
+              ]
+            },
+            {
+              "id": 4,
+              "name": "분해.일반",
+              "min": 90,
+              "screens": [
+                "BAG_DISSASSEMBLE_ACTIVE"
+              ]
+            },
+            {
+              "id": 5,
+              "name": "분해.고급",
+              "min": 90,
+              "screens": [
+                "BAG_DISSASSEMBLE_ACTIVE"
+              ]
+            },
+            {
+              "id": 6,
+              "name": "분해.선택",
+              "min": 90,
+              "screens": [
+                "BAG_DISSASSEMBLE_SELECT"
+              ]
+            },
+            {
+              "id": 7,
+              "name": "분해.선택.금화",
+              "min": 90,
+              "screens": [
+                "BAG_DISSASSEMBLE_SELECT"
+              ]
+            },
+            {
+              "id": 8,
+              "name": "분해.팝업창",
+              "min": 98,
+              "screens": [
+                "BAG_DISSASSEMBLE_POPUP"
+              ]
+            },
+            {
+              "id": 9,
+              "name": "분해.팝업창.확인",
+              "min": 90,
+              "screens": [
+                "BAG_DISSASSEMBLE_POPUP"
+              ]
+            },
+            {
+              "id": 10,
+              "name": "분해.결과창.금화",
+              "min": 90,
+              "screens": [
+                "BAG_DISSASSEMBLE_RESULT"
+              ]
+            },
+            {
+              "id": 11,
+              "name": "분해.결과.텍스트",
+              "min": 90,
+              "screens": [
+                "BAG_DISSASSEMBLE_RESULT"
+              ]
+            },
+            {
+              "id": 12,
+              "name": "스마트키.off",
+              "min": 90,
+              "screens": [
+                "MODE_BASIC"
+              ]
+            },
+            {
+              "id": 13,
+              "name": "스마트키.on",
+              "min": 90,
+              "screens": [
+                "MODE_BASIC"
+              ]
+            },
+            {
+              "id": 14,
+              "name": "스킵",
+              "min": 90,
+              "screens": [
+                "MODE_BASIC"
+              ]
+            },
+            {
+              "id": 15,
+              "name": "스킵.확인",
+              "min": 90,
+              "screens": [
+                "MODE_BASIC"
+              ]
+            }
+          ]
+        }
+```
 
-0. 공통
-    1. 가방비우기
-    2. 광고닫기
-    3. 죽으면
-    4. 
-v0  전체화면
-v0_o0_0       가방가득
-v0_o0_1       가방
-v0_o1       메뉴
-v0_o2       절전모드
-v1  절전화면
-v1_o0_0_0       가방가득
-v1_o0_0_1       가방
-v2  가방화면
-v2_o0       분해좌
-v2_o11_0     일반
-v2_o12_0     고급
-v2_o13_0     희귀
-v2_o14_0     전설
-v2_o11_1     일반.선택
-v2_o12_1     고급.선택
-v2_o13_1     희귀.선택
-v2_o14_1     전설.선택
-v2_o12      분해우
-v2_o2       팝업.확인
-v2_o3       분해결과
-v2_o4       홈으로
-
-
+### yolo_객체 id
+```
 
 인식대상
 
@@ -179,24 +307,6 @@ v2_o4       홈으로
 3.분해좌 + 홈
 2.전체가방풀
 1.절전각방풀
-
-
-
-
-1. 방치형필드 진행
-    0.1
-    1.2. 절전깨우기-
-    1.3. 절전으로
-    
-
-2. 시나리오 진행
-    0.1
-    0.2
-    0.3
-    2.1. 스마트키 실행
-    2.2. 
-
-object.
 
 
 
