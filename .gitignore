@@ -103,3 +103,4 @@ lint/tmp/
 >>>>>>> 90a3f8045852889a617577845da568e356cba3f8
 /keystore.properties
 /app/src/main/assets/detect.tflite
+.idea
