@@ -65,4 +65,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation "com.kakao.sdk:v2-user:2.2.0"
+    implementation "com.kakao.sdk:v2-talk:2.2.0"
 }
