@@ -104,3 +104,6 @@ lint/tmp/
 /keystore.properties
 /app/src/main/assets/detect.tflite
 .idea
+.gradle
+*/.gradle
+*/.idea
