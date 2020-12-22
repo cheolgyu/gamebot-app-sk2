@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/gamebot-common-admob" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/gamebot-common-background" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/gamebot-common-tflite" vcs="Git" />
-  </component>
-</project>
