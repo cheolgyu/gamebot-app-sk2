@@ -105,5 +105,5 @@ lint/tmp/
 /app/src/main/assets/detect.tflite
 .idea
 .gradle
-*/.gradle
-*/.idea
+*/.gradle/**
+*/.idea/**
