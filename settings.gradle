@@ -1,5 +1,4 @@
 include ':gamebot-common-background'
-include ':gamebot-common-tflite'
 include ':gamebot-common-admob'
 include ':app'
 rootProject.name = "gamebot-app-sk2"
